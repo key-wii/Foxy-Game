@@ -6,8 +6,9 @@ else inputChange = false;
 if (fox && inputChange) {
 	fox = false;
 	if (video_exists(v) && video_is_paused(v)) video_play(v);
-	alarm_set(0, irandom(200));
-} else if (!fox && !video_is_playing(v)) {
+	delta_alarm = irandom_range(1, 5) * 1000000; //1-5 seconds
+}
+else if (!fox && !video_is_playing(v)) {
 	if (file_exists(fname)) {
 		buffer_delete(buff);
 		surface_free(surf);
