@@ -3,6 +3,11 @@ if (timer <= 0) {
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	draw_text_colour_outline(display_get_gui_width() / 2, display_get_gui_height() / 2, "Game Over", c_red, c_red, 1, c_orange, c_orange, 1, 2, 10, 1, 1, 0);
+} else {
+	//DEBUG
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_center);
+	draw_text_colour_outline(display_get_gui_width() - 70, display_get_gui_height() - 30, "fps " + string(fps), c_white, c_white, 1, c_white, c_white, .5, 3, 1, 1, 1, 0);
 }
 draw_set_valign(fa_top);
 
