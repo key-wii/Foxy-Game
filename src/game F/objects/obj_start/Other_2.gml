@@ -1,1 +1,1 @@
-room_speed = 9999;
+room_speed = 600;
