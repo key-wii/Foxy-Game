@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "normal",
+    "path": "folders/Sprites/screens/normal.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_screen_cpu2",

@@ -1,5 +1,3 @@
-//if (global.unpausing) exit;
-
 global.nextRoom = false;
 
 //Camera

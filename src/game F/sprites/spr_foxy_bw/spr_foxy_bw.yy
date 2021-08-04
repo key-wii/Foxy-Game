@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "fox",
+    "path": "folders/Sprites/screens/fox.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_foxy_bw",
