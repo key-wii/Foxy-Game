@@ -17,5 +17,14 @@ draw_text_colour_outline(display_get_gui_width() - 10, 10, "0", c_red, c_orange,
 draw_set_alpha(.5);
 draw_set_halign(fa_left);
 var time = timer / maxTimer * 100;
-if (!global.gameover) draw_healthbar(display_get_gui_width() - 20, 60, 20, 90, time, c_black, c_red, c_red, 0, false, false);
+var xx = 0;
+var xx2 = 0;
+var yy = 0;
+if (timer != timer_prev) {
+	xx = irandom_range(-1, 1);
+	xx2 = irandom_range(-10, 1);
+	yy = irandom_range(-1, 1);
+	timer_prev = timer;
+}
+if (!global.gameover) draw_healthbar(display_get_gui_width() - 20 + xx, 60 + yy, 20 + xx2, 90 + yy, time, c_black, c_red, c_red, 0, false, false);
 draw_set_alpha(1);

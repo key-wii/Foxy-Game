@@ -1,5 +1,5 @@
 function ssSteady(shake, shake2, v, h) {
-	with (obj_camera_controller) {
+	with (obj_camera) {
 		shakeSteady = shake;
 
 		plusShake = shake2;
