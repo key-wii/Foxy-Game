@@ -10,6 +10,7 @@ else inputChange = false;
 //fox screen tap
 if (fox && inputChange) {
 	part_particles_create(global.P_System, mouse_x, mouse_y, global.PartChange, 1);
+	instance_create_layer(mouse_x + 40, mouse_y, "UI", obj_point);
 	tapCount = 10;
 	mx = mouse_x;
 	my = mouse_y;

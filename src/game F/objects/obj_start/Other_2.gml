@@ -19,7 +19,7 @@ part_type_speed(global.PartTap2, 4, 4, 0, 0);
 
 global.PartChange = part_type_create();
 part_type_shape(global.PartChange, pt_shape_flare);
-part_type_size(global.PartChange, 1, 1, 4, 0);
+part_type_size(global.PartChange, 1, 1, 2, 0);
 part_type_color1(global.PartChange, c_green);
 part_type_alpha2(global.PartChange, .2, 0);
 part_type_life(global.PartChange, 11, 11);
