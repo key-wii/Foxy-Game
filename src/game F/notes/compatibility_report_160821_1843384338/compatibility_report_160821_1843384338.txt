@@ -1,0 +1,14 @@
+Converting GML script: ${project_dir}\objects\obj_global_shader\Create_0.gml
+Converted description /// @description  Prepare for application-wide shader.
+
+Converting GML script: ${project_dir}\objects\obj_global_shader\Step_0.gml
+Converted description /// @description  Advance time.
+
+Converting GML script: ${project_dir}\objects\obj_global_shader\Draw_77.gml
+Converted description /// @description  Apply shader to entire application.
+
+Converting GML script: ${project_dir}\objects\obj_asteroid\Create_0.gml
+Converted description /// @description  Set initial properties.
+
+Converting GML script: ${project_dir}\objects\obj_asteroid\Step_0.gml
+Converted description /// @description  Update state.

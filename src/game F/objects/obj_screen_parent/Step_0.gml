@@ -3,6 +3,7 @@ if (delta_alarm > 0) {
 	delta_alarm -= delta_time;
 	if (delta_alarm <= 0) {
 		//Get fox'd lol
+		with (obj_timer) foxes++;
 		ssSudden(1, 10, false, false);
 		fox = true;
 		foxCount = 10;

@@ -1,5 +1,5 @@
 var tap = mouse_check_button_pressed(mb_left);
-if (tap) {
+if (tap && !global.gameover) {
 	part_particles_create(global.P_System, mouse_x, mouse_y, global.PartTap, 1);
 }
 if (tap && !global.gameover &&
@@ -9,6 +9,7 @@ else inputChange = false;
 
 //fox screen tap
 if (fox && inputChange) {
+	with (obj_timer) foxes--;
 	part_particles_create(global.P_System, mouse_x, mouse_y, global.PartChange, 1);
 	instance_create_layer(mouse_x + 40, mouse_y, "UI", obj_point);
 	tapCount = 10;
