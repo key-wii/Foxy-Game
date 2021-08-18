@@ -19,9 +19,18 @@ if (!global.gameover || (gameover && f > 2)) {
 	draw_set_font(fnt_points);
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
-	if (timer <= 0) draw_text_colour_outline(display_get_gui_width() / 2, display_get_gui_height() / 2, "Game Over", c_red, c_red, 1, c_orange, c_orange, 1, 2, 10, 1, 1, 0);
+	var xx = display_get_gui_width() / 2;
+	var yy = display_get_gui_height() / 2;
+	if (timer <= 0) draw_text_colour_outline(xx, yy, "Game Over", c_red, c_red, 1, c_orange, c_orange, 1, 2, 10, 1, 1, 0);
+	
+	if (timer >= 0) {
+		draw_set_halign(fa_left);
+		var xx = 10;
+		var yy = display_get_gui_height() - 30;
+		draw_text(xx, yy + 100, "points " + string(global.points));
+	}
+	else draw_text(xx, yy + 100, string(global.points));
 	draw_set_color(c_lime);
-	draw_text(88, display_get_gui_height() - 30, "points " + string(global.points));
 	//draw_text(display_get_gui_width() - 70, display_get_gui_height() - 30, "fps " + string(fps)); //DEBUG
 }
 

@@ -1,4 +1,5 @@
 room_speed = 120;
+device_mouse_dbclick_enable(false);
 
 //Set some particles
 global.P_System = part_system_create();
