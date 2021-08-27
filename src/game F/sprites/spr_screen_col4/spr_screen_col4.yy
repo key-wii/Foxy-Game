@@ -77,8 +77,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "normal",
-    "path": "folders/Sprites/screens/normal.yy",
+    "name": "placeholder",
+    "path": "folders/Sprites/screens/normal/placeholder.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_screen_col4",

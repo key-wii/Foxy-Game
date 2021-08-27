@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_screen_bw4",
-    "path": "sprites/spr_screen_bw4/spr_screen_bw4.yy",
+    "name": "spr_screen_bw0",
+    "path": "sprites/spr_screen_bw0/spr_screen_bw0.yy",
   },
   "solid": false,
   "visible": true,

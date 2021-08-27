@@ -31,7 +31,8 @@ if (!global.gameover || (gameover && f > 2)) {
 	}
 	else draw_text(xx, yy + 100, string(global.points));
 	draw_set_color(c_lime);
-	//draw_text(display_get_gui_width() - 70, display_get_gui_height() - 30, "fps " + string(fps)); //DEBUG
+	draw_set_halign(fa_right);
+	draw_text(display_get_gui_width() - 10, display_get_gui_height() - 30, "fps " + string(fps)); //DEBUG
 }
 
 if (!global.gameover) {

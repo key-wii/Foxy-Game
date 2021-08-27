@@ -10,6 +10,7 @@ function screen_set_col() {
 		case 6: sprite_index = spr_screen_col6; break;
 		case 7: sprite_index = spr_screen_col7; break;
 	}
+	random_frame();
 }
 
 function screen_set_bw() {
@@ -21,8 +22,9 @@ function screen_set_bw() {
 		case 2: sprite_index = spr_screen_bw2; break;
 		case 3: sprite_index = spr_screen_bw3; break;
 		case 4: sprite_index = spr_screen_bw4; break;
-		case 5: sprite_index = spr_screen_bw5; break;
+		//case 5: sprite_index = spr_screen_bw5; break;
 	}
+	random_frame();
 }
 
 function screen_set_cpu() {
@@ -34,6 +36,7 @@ function screen_set_cpu() {
 		case 2: sprite_index = spr_screen_cpu2; break;
 		case 3: sprite_index = spr_screen_cpu3; break;
 	}
+	random_frame();
 }
 
 function screen_set_ran(max) {
@@ -47,4 +50,10 @@ function screen_set_ran(max) {
 	}
 	last_sprite = ran;
 	return ran;
+}
+
+function random_frame() {
+	frameDuration = frameSpeed * image_number;
+	image_index = irandom(image_number / 2);
+	frameCounter = image_index;
 }
