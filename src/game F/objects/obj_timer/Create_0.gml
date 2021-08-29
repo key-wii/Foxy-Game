@@ -9,7 +9,7 @@ gameover = false;
 global.gameover = false;
 
 //Prefetch screen sprites
-draw_texture_flush();
+/*draw_texture_flush();
 
 sprite_prefetch(spr_screen_col0);
 sprite_prefetch(spr_screen_col1);
