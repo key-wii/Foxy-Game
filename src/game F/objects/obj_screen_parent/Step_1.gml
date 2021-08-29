@@ -1,3 +1,5 @@
+if (room == room_start && x < 0) exit;
+
 for (i = 0; i <= 4; i++) {
 	var tap = (device_mouse_check_button_pressed(i, mb_left) || device_mouse_check_button_pressed(i, mb_right));
 	if (tap && !global.gameover) {

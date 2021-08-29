@@ -5,14 +5,16 @@ if (browser_width != cameraWidth || browser_height != cameraHeight) {
     scale_canvas2(base_width, base_height, cameraWidth, cameraHeight, true);
 }
 
-
+var _dt = delta_time / 100 / 60 / 2;
 if (global.start) {
 	if (down) {
-		cameraY += 10;
+		cameraY += 8 * _dt;
+		if (cameraY > 10) cameraY = 10;
 		if (cameraY > 5) down = false;
 	}
 	else {
-		cameraY -= 2;
+		cameraY -= 2 * _dt;
+		if (cameraY < -10) cameraY = -10
 		if (cameraY <= 0) {
 			cameraY = 0;
 			global.start = false;

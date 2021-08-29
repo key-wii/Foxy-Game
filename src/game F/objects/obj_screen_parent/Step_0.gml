@@ -1,3 +1,11 @@
+if (room == room_start && x < 0) exit;
+
+if (delta_alarm_start > 0) {
+	//sprite_index = spr_screen_static;
+	delta_alarm_start -= delta_time;
+	if (delta_alarm_start <= 0)	setScreen();
+}
+
 //Delta Alarm
 if (delta_alarm > 0) {
 	delta_alarm -= delta_time;
@@ -27,11 +35,3 @@ if (foxCount > 0) {
 		y = ystart;
 	}
 }
-
-//Animate
-frameCounter += delta_time;
-if (frameCounter > frameDuration) {
-	frameCounter -= frameDuration;
-	if (!fox) setScreen();
-}
-image_index = floor(frameCounter / frameSpeed);
