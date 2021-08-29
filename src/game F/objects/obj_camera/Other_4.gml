@@ -1,3 +1,5 @@
+if (instance_number(obj_camera) > 1) with (instance_nearest(x, y, obj_camera)) if (id > other.id) instance_destroy();
+
 global.nextRoom = false;
 
 //Camera
@@ -25,3 +27,13 @@ surface_resize(application_surface, cameraWidth, cameraHeight);
 display_set_gui_size(cameraWidth, cameraHeight);
 
 alarm_set(0, 1);
+
+
+shakeSudden = 0;
+shakeSteady = 0;
+shakeMax = 0;
+
+plusShake = 0;
+
+noVer = false;
+noHor = false;
