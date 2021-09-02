@@ -4,6 +4,10 @@ if (room == room_start && x > 0) {
 }
 
 setScreen = screen_set_col;
-fox_sprite = spr_foxy_col;
+var ran = irandom(1);
+switch (ran) {
+	case 0: fox_sprite = spr_foxy_col0;
+	case 1: fox_sprite = spr_foxy_col1;
+}
 
 event_inherited();

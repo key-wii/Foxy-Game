@@ -1,42 +1,52 @@
 function screen_set_col() {
-	var ran = screen_set_ran(7);
+	var ran = screen_set_ran(4);
+	if (sprite_index == -1) ran = irandom(5);
 	switch (ran) {
 		case 0: sprite_index = spr_screen_col0; break;
 		case 1: sprite_index = spr_screen_col1; break;
 		case 2: sprite_index = spr_screen_col2; break;
 		case 3: sprite_index = spr_screen_col3; break;
 		case 4: sprite_index = spr_screen_col4; break;
-		case 5: sprite_index = spr_screen_col5; break;
-		case 6: sprite_index = spr_screen_col6; break;
-		//case 7: sprite_index = spr_screen_col7; break;
+		//case 5: sprite_index = spr_screen_col_news; break;
 	}
-	random_frameA();
+	random_frameBackward();
+	switch (fox_sprite) {
+		case spr_foxy_col0: fox_sprite = spr_foxy_col1;
+		case spr_foxy_col1: fox_sprite = spr_foxy_col0;
+	}
 }
 
 function screen_set_bw() {
 	var ran = screen_set_ran(4);
-	if (sprite_index == -1) var ran = irandom(5);
+	if (sprite_index == -1) ran = irandom(5);
 	switch (ran) {
 		case 0: sprite_index = spr_screen_bw0; break;
 		case 1: sprite_index = spr_screen_bw1; break;
 		case 2: sprite_index = spr_screen_bw2; break;
 		case 3: sprite_index = spr_screen_bw3; break;
 		case 4: sprite_index = spr_screen_bw4; break;
-		//case 5: sprite_index = spr_screen_bw5; break;
 	}
-	random_frameB();
+	random_frameBackward();
+	switch (fox_sprite) {
+		case spr_foxy_bw0: fox_sprite = spr_foxy_bw1; break;
+		case spr_foxy_bw1: fox_sprite = spr_foxy_bw0; break;
+	}
 }
 
 function screen_set_cpu() {
-	var ran = screen_set_ran(2);
-	if (sprite_index == -1) var ran = irandom(3);
+	var ran = screen_set_ran(3);
+	if (sprite_index == -1) ran = irandom(4);
 	switch (ran) {
 		case 0: sprite_index = spr_screen_cpu0; break;
 		case 1: sprite_index = spr_screen_cpu1; break;
 		case 2: sprite_index = spr_screen_cpu2; break;
-		//case 3: sprite_index = spr_screen_cpu3; break;
+		case 3: sprite_index = spr_screen_cpu3; break;
 	}
-	random_frameB();
+	random_frameBackward();
+	switch (fox_sprite) {
+		case spr_foxy_cpu0: fox_sprite = spr_foxy_cpu1;
+		case spr_foxy_cpu1: fox_sprite = spr_foxy_cpu0;
+	}
 }
 
 function screen_set_ran(max) {
@@ -52,13 +62,13 @@ function screen_set_ran(max) {
 	return ran;
 }
 
-function random_frameA() {
+function random_frameForward() {
 	frameDuration = frameSpeed * image_number;
 	image_index = irandom(frameDuration);
 	frameCounter = image_index;
 }
 
-function random_frameB() {
+function random_frameBackward() {
 	frameDuration = frameSpeed * image_number;
 	image_index = frameDuration - irandom(frameDuration);
 	frameCounter = image_index;

@@ -1,9 +1,9 @@
 w_initial = sprite_width;
 h_initial = sprite_height;
-xscale_initial = image_xscale;
+/*xscale_initial = image_xscale;
 yscale_initial = image_yscale;
 wDiff = 0;
-hDiff = 0;
+hDiff = 0;*/
 
 image_speed = 0;
 frameSpeed = 1000000 / 10; //10 fps

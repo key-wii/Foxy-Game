@@ -23,7 +23,7 @@ if (!global.gameover || (gameover && f > 2)) {
 	var yy = display_get_gui_height() / 2;
 	if (timer <= 0) {
 		draw_text_colour_outline(xx, yy, "Game Over", c_red, c_red, 1, c_orange, c_orange, 1, 2, 10, 1, 1, 0);
-		if (timer <= -13) draw_text_colour_outline(xx, yy + 50, "Play Again?", c_red, c_red, 1, c_orange, c_orange, 1, 2, 10, 1, 1, 0);
+		if (timer <= -13) draw_text_colour_outline(xx, yy + 50, "Play Again?", c_blue, c_blue, 1, c_teal, c_teal, 1, 2, 10, 1, 1, 0);
 	}
 
 	if (timer >= 0) {
