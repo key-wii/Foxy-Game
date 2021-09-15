@@ -286,7 +286,7 @@
   "nineSlice": null,
   "parent": {
     "name": "cpu",
-    "path": "folders/Sprites/screens/normal/cpu.yy",
+    "path": "folders/Sprites/screens/cpu.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_screen_cpu2",

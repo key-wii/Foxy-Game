@@ -10,16 +10,8 @@ if (delta_alarm_start > 0) {
 if (delta_alarm > 0) {
 	delta_alarm -= delta_time;
 	if (delta_alarm <= 0) {
-		//Get fox'd lol
-		with (obj_timer) foxes++;
-		ssSudden(1, 10, false, false);
-		fox = true;
-		foxCount = 10;
-		sprite_index = fox_sprite;
-		
-		frameDuration = frameSpeed * image_number;
-		image_index = frameDuration;
-		frameCounter = image_index;
+		if (object_index != obj_screen_cpu) breaking_news();
+		else set_fox();
 		
 		/*image_xscale *= 1.1;
 		image_yscale *= 1.1;
@@ -44,6 +36,7 @@ if (delta_alarm > 0) {
 frameCounter -= delta_time;
 if (frameCounter < 0) {
 	frameCounter += frameDuration;
+	
 	var ran = irandom(2);
 	if (!fox) setScreen();
 	else if (ran == 0) {

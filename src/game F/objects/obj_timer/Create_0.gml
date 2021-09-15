@@ -8,6 +8,8 @@ gameover = false;
 
 global.gameover = false;
 
+news = irandom(6);
+
 //Prefetch screen sprites
 /*draw_texture_flush();
 

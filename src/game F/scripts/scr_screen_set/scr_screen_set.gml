@@ -1,4 +1,11 @@
 function screen_set_col() {
+	if (breakingNews) {
+		set_news();
+		image_index = floor(frameCounter / frameSpeed);
+		exit;
+	}
+	frameSpeed = 1000000 / 10; //10 fps
+	
 	var ran = screen_set_ran(4);
 	if (sprite_index == -1) ran = irandom(5);
 	switch (ran) {
@@ -17,6 +24,13 @@ function screen_set_col() {
 }
 
 function screen_set_bw() {
+	if (breakingNews) {
+		set_news();
+		image_index = floor(frameCounter / frameSpeed);
+		exit;
+	}
+	frameSpeed = 1000000 / 10; //10 fps
+	
 	var ran = screen_set_ran(4);
 	if (sprite_index == -1) ran = irandom(5);
 	switch (ran) {

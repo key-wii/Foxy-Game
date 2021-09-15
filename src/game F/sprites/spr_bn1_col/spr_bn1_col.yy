@@ -169,8 +169,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "news",
-    "path": "folders/Sprites/screens/news.yy",
+    "name": "col",
+    "path": "folders/Sprites/screens/news/col.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bn1_col",

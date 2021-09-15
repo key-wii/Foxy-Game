@@ -121,8 +121,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "news",
-    "path": "folders/Sprites/screens/news.yy",
+    "name": "bw",
+    "path": "folders/Sprites/screens/news/bw.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bn2_bw",
