@@ -2,7 +2,7 @@ function set_news() {
 	var ran = irandom(1);
 	if (firstNews) var broadcast = obj_timer.news;
 	else var broadcast = irandom(6);
-	if (firstNews || ran == 0) {
+	if ((firstNews || ran == 0) && !global.gameover) {
 		switch (col) {
 			case false: switch (broadcast) {
 				case 0: sprite_index = spr_news0_bw break;
@@ -31,6 +31,8 @@ function set_news() {
 		firstNews = false;
 		
 		delta_alarm = irandom_range(8, 20) * 1000000; //8-20 seconds
+		
+		if (instance_exists(obj_clock)) with (obj_clock) draw_time = true;
 	} else set_fox();
 	
 	breakingNews = false;

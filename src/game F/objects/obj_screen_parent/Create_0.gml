@@ -1,3 +1,7 @@
+if (x >= 0) {
+	shift();
+}
+
 w_initial = sprite_width;
 h_initial = sprite_height;
 /*xscale_initial = image_xscale;

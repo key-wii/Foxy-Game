@@ -1,7 +1,7 @@
 //window_set_fullscreen(true);
 alarm_set(0, 1);
 
-global.start = true;
+global.start = false;
 down = true;
 
 cameraX = 0;

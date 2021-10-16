@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_tvs",
-    "path": "sprites/spr_tvs/spr_tvs.yy",
+    "name": "spr_clock",
+    "path": "sprites/spr_clock/spr_clock.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,6 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -30,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_tvs",
+  "name": "obj_clock",
   "tags": [],
   "resourceType": "GMObject",
 }

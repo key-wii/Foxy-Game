@@ -1,4 +1,4 @@
-if (!global.gameover) {
+/*if (!global.gameover) {
 	draw_set_alpha(.5);
 	draw_set_halign(fa_left);
 	var time = timer / maxTimer * 100;
@@ -12,7 +12,7 @@ if (!global.gameover) {
 		timer_prev = timer;
 	}
 	draw_healthbar(display_get_gui_width() - 20 + xx, 60 + yy, 20 + xx2, 90 + yy, time, c_black, c_red, c_red, 0, false, false);
-}
+}*/
 
 var f = obj_global_shader.ticks / obj_global_shader.duration_ticks;
 if (!global.gameover || (gameover && f > 2)) {
@@ -38,7 +38,7 @@ if (!global.gameover || (gameover && f > 2)) {
 	draw_text(display_get_gui_width() - 10, display_get_gui_height() - 30, "fps " + string(fps)); //DEBUG
 }
 
-if (!global.gameover) {
+/*if (!global.gameover) {
 	draw_set_font(fnt_timer);
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
@@ -48,6 +48,6 @@ if (!global.gameover) {
 	draw_set_halign(fa_right);
 	draw_text_colour_outline(display_get_gui_width() - 10, 10, "0", c_red, c_orange, 1, c_yellow, c_white, .5, 4, 10, 1, 1, 0);
 	//draw_text_colour_outline(x, y, string, textColor1, textColor2, textAlpha, outlineColor1, outlineColor2, outlineAlpha, outlineThickness, outlineQuality, xscale, yscale, angle);
-}
+}*/
 
 draw_set_alpha(1);

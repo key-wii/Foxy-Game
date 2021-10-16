@@ -252,7 +252,7 @@
     "path": "folders/Fonts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "fnt_timer",
+  "name": "fnt_ui",
   "tags": [],
   "resourceType": "GMFont",
 }

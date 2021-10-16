@@ -1,0 +1,10 @@
+image_xscale = .5;
+image_yscale = .5;
+x = room_width / 2;
+y = sprite_height / 2 + 50;
+direction = 0;
+lost = false;
+if (instance_exists(obj_timer)) maxTimer = obj_timer.maxTimer;
+else maxTimer = -1;
+timer = maxTimer;
+draw_time = false;
