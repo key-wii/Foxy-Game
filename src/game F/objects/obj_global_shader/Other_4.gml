@@ -8,3 +8,11 @@ application_surface_draw_enable(false);
 ticks = 0;
 duration_ticks = room_speed * 3;
 active = false;
+turn_on = false;
+
+if (room == room_start) {
+	ticks = duration_ticks;
+	turn_on = true;
+	
+	alarm_set(0, 1);
+}

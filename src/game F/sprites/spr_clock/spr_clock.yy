@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "game F",
-    "path": "game F.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_clock",

@@ -18,3 +18,12 @@ sprite_bn2 = spr_bn2_col;
 event_inherited();
 
 col = true;
+
+noises[0] = talk1c;
+noises[1] = talk2c;
+noises[2] = talk3c;
+noises[3] = talk4c;
+noises[4] = talk5c;
+noise = 0;
+
+pressSound = press_tv;

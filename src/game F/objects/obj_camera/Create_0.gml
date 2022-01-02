@@ -6,3 +6,6 @@ plusShake = 0;
 
 noVer = false;
 noHor = false;
+
+cameraX = 0;
+cameraY = 0;

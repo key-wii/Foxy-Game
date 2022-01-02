@@ -15,6 +15,10 @@ if (drop) {
 		if (timer <= -5 && foxes >= 11 && !obj_global_shader.active) {
 			gameover = true;
 			obj_global_shader.active = true;
+			audio_play_sound(tv_off, false, false);
 		}
 	}
 }
+
+if (global.newsStarted > 0) global.newsStarted--;
+if (global.staticStarted > 0) global.staticStarted--;

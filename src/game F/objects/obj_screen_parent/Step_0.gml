@@ -3,7 +3,10 @@ if (room == room_start && x < 0) exit;
 if (delta_alarm_start > 0) {
 	//sprite_index = spr_screen_static;
 	delta_alarm_start -= delta_time;
-	if (delta_alarm_start <= 0)	setScreen();
+	if (delta_alarm_start <= 0)	{
+		setScreen();
+		audio_stop_sound(snd_static);
+	}
 }
 
 //Delta Alarm
@@ -52,3 +55,12 @@ if (frameCounter < 0) {
 	}
 }
 image_index = floor(frameCounter / frameSpeed);
+
+//Making noise
+/*if (!breakingNews) {
+	audio_sound_gain(noises[noise], .1, 100);
+	if (!audio_is_playing(noises[noise])) audio_play_sound(noises[noise], false, false);
+	
+	noise++;
+	if (noise >= array_length(noises)) noise = 0;
+}*/

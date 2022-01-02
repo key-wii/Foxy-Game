@@ -1,7 +1,7 @@
 /// @description  Apply shader to entire application.
 var is_compiled = shader_is_compiled(crtshutdown_shader);
 
-if (is_compiled && active)
+if (is_compiled && (active || turn_on))
 {
     var progress_param = shader_get_uniform(crtshutdown_shader, "progress");
  

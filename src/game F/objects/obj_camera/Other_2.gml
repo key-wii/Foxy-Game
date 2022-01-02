@@ -5,4 +5,4 @@ global.start = false;
 down = true;
 
 cameraX = 0;
-cameraY = 0 - room_height / 1.5;
+cameraY = 0;

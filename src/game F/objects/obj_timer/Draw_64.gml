@@ -23,19 +23,19 @@ if (!global.gameover || (gameover && f > 2)) {
 	var yy = display_get_gui_height() / 2;
 	if (timer <= 0) {
 		draw_text_colour_outline(xx, yy, "Game Over", c_red, c_red, 1, c_orange, c_orange, 1, 2, 10, 1, 1, 0);
-		if (timer <= -13) draw_text_colour_outline(xx, yy + 50, "Play Again?", c_blue, c_blue, 1, c_teal, c_teal, 1, 2, 10, 1, 1, 0);
+		//if (timer <= -13) draw_text_colour_outline(xx, yy + 50, "Play Again?", c_blue, c_blue, 1, c_teal, c_teal, 1, 2, 10, 1, 1, 0);
 	}
 
 	if (timer >= 0) {
-		draw_set_halign(fa_left);
+		/*draw_set_halign(fa_left);
 		var xx = 10;
 		var yy = display_get_gui_height() - 30;
-		draw_text(xx, yy + 100, "points " + string(global.points));
+		draw_text(xx, yy + 100, "points " + string(global.points));*/
 	}
-	else draw_text(xx, yy + 100, string(global.points));
-	draw_set_color(c_lime);
+	else draw_text(xx, yy + 100, string(global.points) + " Channels Changed");
+	/*draw_set_color(c_lime);
 	draw_set_halign(fa_right);
-	draw_text(display_get_gui_width() - 10, display_get_gui_height() - 30, "fps " + string(fps)); //DEBUG
+	draw_text(display_get_gui_width() - 10, display_get_gui_height() - 30, "fps " + string(fps)); //DEBUG*/
 }
 
 /*if (!global.gameover) {

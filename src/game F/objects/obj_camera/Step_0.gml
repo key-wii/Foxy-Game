@@ -5,7 +5,7 @@ if (browser_width != cameraWidth || browser_height != cameraHeight) {
     scale_canvas2(base_width, base_height, cameraWidth, cameraHeight, true);
 }
 
-var _dt = delta_time / 100 / 60 / 2;
+/*var _dt = delta_time / 100 / 60 / 2;
 if (global.start) {
 	if (down) {
 		cameraY += 8 * _dt;
@@ -23,7 +23,7 @@ if (global.start) {
 	//Set Camera Pos
 	camera_set_view_pos(view_camera[0], cameraX, cameraY);
 	exit;
-}
+}*/
 
 if (!global.nextRoom && shakeSudden <= 0 && shakeSteady <= 0 && shakeMax == 0) {
 	cameraX = clamp(cameraX, 0, room_width - cameraWidth);

@@ -6,6 +6,9 @@ drop = false;
 foxes = 0;
 gameover = false;
 
+global.newsStarted = 0;
+global.staticStarted = 0;
+
 global.gameover = false;
 
 news = irandom(6);

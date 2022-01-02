@@ -35,3 +35,10 @@ my = mouse_y;
 
 firstNews = true;
 breakingNews = false;
+
+noises[0] = talk1;
+noises[1] = talk2;
+noises[2] = talk3;
+noises[3] = talk4;
+noises[4] = talk5;
+noise = 0;

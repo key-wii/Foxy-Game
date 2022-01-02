@@ -18,3 +18,5 @@ sprite_bn2 = spr_bn2_col;
 event_inherited();
 
 delta_alarm = irandom_range(35, 60) * 1000000; //35-60 seconds
+
+pressSound = press_cpu;

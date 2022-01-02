@@ -21,7 +21,7 @@ if (w) {
 }
 
 count += delta_time;
-if (count > 1000000 && y < 300) alpha -= .01;
+if (count > 1000000 && y < 30) alpha -= .01;
 if (y < 120) alpha -= .05;
 if (y < 110) alpha -= .05;
 if (alpha < 0) instance_destroy();
