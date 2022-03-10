@@ -6,6 +6,9 @@ if (delta_alarm_start > 0) {
 	if (delta_alarm_start <= 0)	{
 		setScreen();
 		audio_stop_sound(snd_static);
+		
+		global.channels++;
+		set_tvs_volume();
 	}
 }
 

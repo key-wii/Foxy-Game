@@ -1,6 +1,10 @@
 room_speed = 120;
 device_mouse_dbclick_enable(false);
 
+global.channelOn = false;
+global.channels = 0;
+global.tvSound = undefined;
+
 //Set some particles
 global.P_System = part_system_create();
 

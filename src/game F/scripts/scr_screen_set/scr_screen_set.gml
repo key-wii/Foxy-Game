@@ -17,9 +17,14 @@ function screen_set_col() {
 		//case 5: sprite_index = spr_screen_col_news; break;
 	}
 	random_frameBackward();
+	/*if (!global.channelOn) {
+		global.channelOn = true;
+		global.tvSound = audio_play_sound(tv_talking, false, true);
+	}*/
+	
 	switch (fox_sprite) {
-		case spr_foxy_col0: fox_sprite = spr_foxy_col1;
-		case spr_foxy_col1: fox_sprite = spr_foxy_col0;
+		case spr_foxy_col0: fox_sprite = spr_foxy_col1; break;
+		case spr_foxy_col1: fox_sprite = spr_foxy_col0; break;
 	}
 }
 

@@ -22,6 +22,10 @@ for (i = 0; i <= 4; i++) {
 		fox = false;
 		setScreen();
 		audio_play_sound(pressSound, false, false);
+		
+		global.channels++;
+		set_tvs_volume();
+	
 			if (global.seconds > 120) delta_alarm = irandom_range(1, 4)  * 1000000; //1-4  seconds
 		else if (global.seconds > 90) delta_alarm = irandom_range(1, 5)  * 1000000; //1-5  seconds
 		else if (global.seconds > 50) delta_alarm = irandom_range(3, 8)  * 1000000; //3-8  seconds

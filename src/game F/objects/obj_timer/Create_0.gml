@@ -5,6 +5,7 @@ global.seconds = 0;
 drop = false;
 foxes = 0;
 gameover = false;
+end_timer = 25;
 
 global.newsStarted = 0;
 global.staticStarted = 0;

@@ -13,16 +13,24 @@
 	}
 	draw_healthbar(display_get_gui_width() - 20 + xx, 60 + yy, 20 + xx2, 90 + yy, time, c_black, c_red, c_red, 0, false, false);
 }*/
+//DEBUGGING
+/*var xx = display_get_gui_width() / 2;
+var yy = display_get_gui_height() / 2;
+draw_text_colour_outline(xx, yy, string(global.channels), c_red, c_red, 1, c_orange, c_orange, 1, 2, 10, 1, 1, 0);*/
+//
 
 var f = obj_global_shader.ticks / obj_global_shader.duration_ticks;
 if (!global.gameover || (gameover && f > 2)) {
-	draw_set_font(fnt_points);
+	//draw_set_font(fnt_points);
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	var xx = display_get_gui_width() / 2;
 	var yy = display_get_gui_height() / 2;
 	if (timer <= 0) {
-		draw_text_colour_outline(xx, yy, "Game Over", c_red, c_red, 1, c_orange, c_orange, 1, 2, 10, 1, 1, 0);
+		draw_set_font(fnt_ui);
+		draw_set_color(c_red);
+		//draw_text_colour_outline(xx, yy, "Game Over", c_red, c_red, 1, c_orange, c_orange, 1, 2, 10, 1, 1, 0);
+		draw_text(xx, yy - 100, "Game Over");
 		//if (timer <= -13) draw_text_colour_outline(xx, yy + 50, "Play Again?", c_blue, c_blue, 1, c_teal, c_teal, 1, 2, 10, 1, 1, 0);
 	}
 
@@ -32,11 +40,16 @@ if (!global.gameover || (gameover && f > 2)) {
 		var yy = display_get_gui_height() - 30;
 		draw_text(xx, yy + 100, "points " + string(global.points));*/
 	}
-	else draw_text(xx, yy + 100, string(global.points) + " Channels Changed");
+	else {
+		draw_set_font(fnt_points);
+		draw_set_color(c_white);
+		draw_text(xx, yy + 100, string(global.points) + " Channels Changed");
+	}
 	/*draw_set_color(c_lime);
 	draw_set_halign(fa_right);
 	draw_text(display_get_gui_width() - 10, display_get_gui_height() - 30, "fps " + string(fps)); //DEBUG*/
 }
+draw_set_color(c_white);
 
 /*if (!global.gameover) {
 	draw_set_font(fnt_timer);

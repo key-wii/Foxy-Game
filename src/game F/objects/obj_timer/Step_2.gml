@@ -19,6 +19,10 @@ if (drop) {
 		}
 	}
 }
+if (gameover) {
+	end_timer -= 1 * _dt;
+	if (end_timer <= 0) game_restart();
+}
 
 if (global.newsStarted > 0) global.newsStarted--;
 if (global.staticStarted > 0) global.staticStarted--;

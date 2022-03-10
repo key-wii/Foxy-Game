@@ -7,4 +7,7 @@ function set_fox() {
 	frameDuration = frameSpeed * image_number;
 	image_index = frameDuration;
 	frameCounter = image_index;
+	
+	global.channels--;
+	set_tvs_volume();
 }

@@ -1,5 +1,5 @@
-image_xscale = .5;
-image_yscale = .5;
+image_xscale = .75;
+image_yscale = .75;
 x = room_width / 2;
 y = sprite_height / 2 + 50;
 direction = 0;

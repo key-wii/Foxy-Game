@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.8,
+  "volume": 0.6,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "tv_hum.wav",
-  "duration": 4.377333,
+  "duration": 4.236042,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

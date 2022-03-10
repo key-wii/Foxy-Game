@@ -19,5 +19,5 @@ function breaking_news() {
 	frameCounter = image_index;
 	
 	breakingNews = true;
-			global.newsStarted = 5;
+	global.newsStarted = 5;
 }
