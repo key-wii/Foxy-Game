@@ -10,8 +10,15 @@ if (drop) {
 	drop = false;
 	if (timer <= 0) {
 		if (instance_exists(obj_clock)) with (obj_clock) lost = true;
+		if (!global.gameover) {
+			with (obj_screen_parent) {
+				delta_alarm = 0;
+				if (object_index == obj_screen_cpu && fox == false) set_fox();
+				else if (fox == false) breaking_news();
+			}
+		}
+		//if (foxes < 11) timer = 0;
 		global.gameover = true;
-		if (foxes < 11) timer = 0;
 		if (timer <= -5 && foxes >= 11 && !obj_global_shader.active) {
 			gameover = true;
 			obj_global_shader.active = true;

@@ -1,7 +1,7 @@
-image_xscale = .75;
-image_yscale = .75;
+image_xscale = .375;
+image_yscale = .375;
 x = room_width / 2;
-y = sprite_height / 2 + 50;
+y = sprite_height / 2 + 30;
 direction = 0;
 lost = false;
 if (instance_exists(obj_timer)) maxTimer = obj_timer.maxTimer;

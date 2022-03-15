@@ -1,5 +1,5 @@
 var _dt = delta_time / 1000000;
-y += 500 * _dt;
+y += 250 * _dt;
 
 if (y >= sprite_height) {
 	global.start = true;
